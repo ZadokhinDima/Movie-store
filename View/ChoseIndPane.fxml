@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="workpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.NewOrderController">
+   <top>
+      <AnchorPane>
+         <children>
+            <ToolBar maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="249.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </ToolBar>
+            <TextField fx:id="searchField" prefHeight="25.0" prefWidth="429.0" promptText="Почніть вводити ім'я" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="8.5" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane>
+         <children>
+            <ToolBar layoutX="468.0" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ToolBar>
+          <Button mnemonicParsing="false" onAction="#toSecondPane" prefHeight="25.0" prefWidth="60.0" text="Далі" textAlignment="CENTER" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="30.0" />
+            <Button mnemonicParsing="false" onAction="#newCustomer" prefHeight="25.0" prefWidth="125.0" text="Новий замовник" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="30.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <ListView fx:id="names" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ListView>
+   </center>
+</BorderPane>

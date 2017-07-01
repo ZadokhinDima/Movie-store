@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="box" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.CashierController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="201.0" style="-fx-background-color: #6D6F6F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="newOrder" alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#newOrderClicked" prefHeight="48.0" prefWidth="200.0" text="Нове замовлення" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator opacity="0.51" prefWidth="200.0" />
+            <Label fx:id="closeOrder" alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#closeOrderClicked" prefHeight="48.0" prefWidth="200.0" text="Замовлення" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator opacity="0.51" prefWidth="200.0" />
+            <Label fx:id="catalogue" alignment="CENTER" layoutX="10.0" layoutY="58.0" onMouseClicked="#catalogueClicked" prefHeight="48.0" prefWidth="200.0" text="Каталог фільмів" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator opacity="0.51" prefWidth="200.0" />
+            <Label alignment="CENTER" layoutX="11.0" layoutY="112.0" onMouseClicked="#exit" prefHeight="48.0" prefWidth="200.0" text="Вихід" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="10.0" layoutY="160.0" opacity="0.51" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Separator opacity="0.49" orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #6D6F6F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane fx:id="workPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fitHeight="261.0" fitWidth="674.0" opacity="0.85" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@9316_879555_original.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.Articles">
+   <top>
+      <AnchorPane>
+         <children>
+            <ToolBar prefHeight="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </ToolBar>
+            <TextField fx:id="searchField" maxWidth="434.0" prefHeight="25.0" prefWidth="434.0" promptText="Введіть інформацію для пошуку" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="8.5" />
+            <ChoiceBox fx:id="chooseType" prefWidth="150.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="8.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TableView fx:id="CatalogueTable" mouseTransparent="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" editable="false" prefWidth="371.0" text="Назва" />
+            <TableColumn fx:id="typeColumn" editable="false" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" text="Категорія" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TableView>
+   </center>
+   <bottom>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="468.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button mnemonicParsing="false" onAction="#newArticle" text="Нове найменування" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

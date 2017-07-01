@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.newFirmController">
+   <children>
+      <Label layoutX="81.0" layoutY="87.0" text="Назва підприємства:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="50.0" />
+      <Label layoutX="93.0" layoutY="170.0" text="ЄДРПОУ:" AnchorPane.leftAnchor="93.0" AnchorPane.topAnchor="120.0" />
+      <TextField fx:id="name" layoutX="216.0" layoutY="83.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="47.0" />
+      <TextField fx:id="number" layoutX="216.0" layoutY="170.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="117.0" />
+      <Button layoutX="41.0" layoutY="172.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="77.0" text="Скасувати" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="41.0" />
+      <Button layoutX="315.0" layoutY="172.0" mnemonicParsing="false" onAction="#insertFirm" text="Готово" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.PriceControl">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Button mnemonicParsing="false" onAction="#submit" text="Зберегти зміни" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="30.0" />
+          <Button mnemonicParsing="false" onAction="#init" text="Скасувати зміни" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="30.0" />
+            <GridPane alignment="CENTER_RIGHT" hgap="10.0" layoutX="6.0" layoutY="6.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Величина базової націнки:" GridPane.rowIndex="1" />
+                  <Label text="Постійний клієнт після" GridPane.rowIndex="5" />
+                  <Label text="Частий клієнт після" GridPane.rowIndex="3" />
+                  <Label text="&quot;Друг магазину&quot; після" GridPane.rowIndex="7" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <children>
+                        <TextField fx:id="oftenClient" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="замовлень." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <TextField fx:id="usualClient" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="замовлень." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <children>
+                        <TextField fx:id="alwaysClient" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="замовлень." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="baseUp" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="\%." />
+                     </children>
+                  </HBox>
+                  <Label text="Знижка частим клієнтам:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="Знижка постійним клієнтам:" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="Знижка &quot;Друзям магазину&quot;:" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <TextField fx:id="oftenClientOff" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="\%." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <TextField fx:id="usualClientOff" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="\%." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <children>
+                        <TextField fx:id="alwaysClientOff" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="\%." />
+                     </children>
+                  </HBox>
+                  <Label text="Знижка на день народження:" GridPane.rowIndex="9" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <TextField fx:id="birthDayOff" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="\%." />
+                     </children>
+                  </HBox>
+                  <Label text="Поточна сезонна знижка:" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                     <children>
+                        <TextField fx:id="seasonOff" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="\%." />
+                     </children>
+                  </HBox>
+                  <Label text="Швидкість зниження ціни на товар:" GridPane.rowIndex="11" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <children>
+                        <Label text="1% за " />
+                        <TextField fx:id="speed" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" prefHeight="30.0" prefWidth="40.0" />
+                        <Label text="діб." />
+                     </children>
+                  </HBox>
+                  <Label text="(залиште 0, щоб ціна не знижувалась)" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <Label text="Чи сумуються знижки:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="sumOffers" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

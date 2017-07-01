@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Sample" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9e2db009-8e49-4002-b3f3-a2978605c4a6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#908181">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFE6E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Data" uuid="2913edad-b468-407f-8378-f4bec97bd68b">
+		<field name="name" class="java.lang.String"/>
+		<field name="type" class="java.lang.String"/>
+		<field name="quantity" class="java.lang.Integer"/>
+		<field name="price" class="java.lang.Float"/>
+	</subDataset>
+	<parameter name="ItemDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Id" class="java.lang.Integer"/>
+	<field name="Type" class="java.lang.String"/>
+	<field name="Name" class="java.lang.String"/>
+	<field name="Time" class="java.lang.String"/>
+	<field name="summ" class="java.lang.Float"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="124" height="34" uuid="0b4365e7-f91c-49c9-94ce-32e93423320a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Документ №:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="0" width="100" height="34" uuid="921675e9-16d4-47ce-bac0-2b17cd23696b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="0" width="114" height="34" uuid="b535d239-e439-41c5-9a40-4caaf31f1c6b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Тип:  ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="394" y="0" width="136" height="34" uuid="b2200f7b-c2fe-4cf9-86f5-d9e7a619c103"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Type}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="44" uuid="cea1bb81-de35-4dfd-af05-a7229d6100d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Контрагент:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="0" width="395" height="44" uuid="c2640230-f5c8-486f-a1ae-edfd5d9f6028"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="44" width="114" height="44" uuid="f132acc1-ceec-4fe8-9587-3dbf557ae563"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Час: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="44" width="395" height="44" uuid="c86c00ae-4f7e-47f1-a5a7-4e13acd16f9e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Time}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="53" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 1" style="table 1" x="0" y="0" width="555" height="53" uuid="99b7ec59-7703-4352-9af8-cd2ce89f7b04"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Data" uuid="d41acdc9-8820-40b4-af21-72f54e89801f">
+						<dataSourceExpression><![CDATA[$P{ItemDataSource}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="249" uuid="ceea236c-a5d4-4bc6-9d04-cbc59a1d48df">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="249" height="30" uuid="547ad4fd-9805-4d9b-9830-a57574bd1e98"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14"/>
+								</textElement>
+								<text><![CDATA[Назва найменування]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="249" height="24" uuid="c6190111-58ce-4fe6-bfd3-00605452f270"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="113" uuid="7b90721f-f59d-49b9-8ce3-7e518291ceb8">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="113" height="30" uuid="721389e8-bf55-4bf1-b4b4-aeab21a46e85"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14"/>
+								</textElement>
+								<text><![CDATA[Категорія]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="113" height="24" uuid="3a6e72d2-3873-4702-8369-0a4bb64232bd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="99" uuid="d293588d-931c-44a4-8a17-c5ff3e202752">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="98" height="30" uuid="86cb44c1-1fd7-4272-bf58-81ea946b0185"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14"/>
+								</textElement>
+								<text><![CDATA[Кількість]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="98" height="24" uuid="01f2a3e0-0ba4-4eb2-939f-dbfbfe4e1273"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="58db968c-ca3f-402b-9e9c-b9cef6f4e05a">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="9c71b390-4bdc-4530-bb14-37f7a76e7047"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14"/>
+								</textElement>
+								<text><![CDATA[Вартість(грн)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField>
+								<reportElement x="1" y="0" width="99" height="24" uuid="8c6897d0-2efe-4d6c-add4-fa7c5c4153ab"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="0" width="164" height="48" uuid="a5183621-4a5d-453b-b99b-239d2c0dd2ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Всього до сплати:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="354" y="0" width="201" height="48" uuid="2faed3a8-417e-42bf-b573-3981f317da50"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" pdfEncoding="Cp1251" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{summ}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

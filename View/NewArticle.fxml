@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controll.InsertArticle">
+   <children>
+      <Button layoutX="225.0" layoutY="61.0" mnemonicParsing="false" onAction="#insertArticle" text="Готово" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="40.0" />
+      <Label layoutX="22.0" layoutY="33.0" text="Назва найменування:" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="29.0" />
+      <TextField fx:id="newArticle" layoutX="150.0" layoutY="29.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="20.0" />
+      <Button layoutX="22.0" layoutY="61.0" mnemonicParsing="false" onAction="#cancel" text="Скасувати" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="206.0" />
+      <Label layoutX="87.0" layoutY="67.0" text="Категорія:" />
+      <ComboBox id="comboBox" fx:id="comboBox" editable="true" layoutX="151.0" layoutY="63.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>
